@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "research-agent"
+version = "0.1.0"
+description = "Tool-augmented LLM research assistant with verified, source-grounded quotes and citations."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Jinxi Zhang" }]
+keywords = ["llm", "agents", "react", "rag", "retrieval", "langchain", "citations"]
+# Runtime deps live in requirements.txt (heavy libs such as torch/transformers are
+# reused from the environment); kept out of [project.dependencies] so that
+# `pip install -e .` stays instant and does not re-resolve large wheels.
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/zzzjpete/5293-LLM-project"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["research_agent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
