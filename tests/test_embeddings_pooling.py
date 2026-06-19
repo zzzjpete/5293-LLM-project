@@ -1,4 +1,4 @@
-"""Regression guard for the e5 pooling fix (CLAUDE.md finding #1).
+"""Regression guard for the e5 attention-mask mean-pooling fix.
 
 Loads the small e5 model (cached after first run). Skips if it cannot be
 fetched (e.g. offline CI) so the pure-logic tests still run everywhere.

@@ -1,6 +1,6 @@
 """Question routing for the research agent.
 
-Fixes the notebook's Gradio router (CLAUDE.md finding / improvement #8). The
+Fixes the notebook's Gradio router. The
 original ``answer_question`` regex-routed quote / summary / paper-reference
 questions straight to a single tool, BYPASSING the selected ReAct/CoT strategy —
 so the strategy toggle was ignored for exactly those queries.

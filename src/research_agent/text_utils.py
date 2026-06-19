@@ -3,7 +3,7 @@
 normalize_quote_text is ported from the notebook's find_paper_quotes pipeline so
 that quote_search and find_paper_quotes share a single implementation (the
 original notebook only normalized in find_paper_quotes, leaving quote_search
-quotes full of PDF artifacts — see CLAUDE.md finding #11).
+quotes full of PDF artifacts).
 """
 
 from __future__ import annotations
